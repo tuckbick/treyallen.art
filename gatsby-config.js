@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: 'https://treyallen.art',
     title: "treyallen.art",
   },
   plugins: [
