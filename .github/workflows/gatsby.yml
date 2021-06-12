@@ -1,0 +1,27 @@
+name: Gatsby Build & Publish
+
+on:
+  push:
+    branches:
+      - main
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+    inputs:
+      skipPublish:
+        description: 'Skip Publish'
+        required: true
+        default: 'true'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Skip Publish? ${{ github.event.inputs.skipPublish }}"
+      - uses: actions/checkout@v2
+      - uses: enriikke/gatsby-gh-pages-action@v2
+        with:
+          access-token: ${{ secrets.ACCESS_TOKEN }}
+          deploy-branch: gh-pages
+          gatsby-args: --prefix-paths
+          skip-publish: ${{ github.event.inputs.skipPublish }}
