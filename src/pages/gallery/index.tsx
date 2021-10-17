@@ -1,6 +1,6 @@
 import * as React from "react";
 import { graphql } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
+import { Helmet } from "react-helmet";
 import Header from "@components/header";
 import Listing from "@components/listing";
 
@@ -43,6 +43,9 @@ interface GalleryPageProps {
 const GalleryPage: React.FC<GalleryPageProps> = ({ data }) => {
     return (
         <div className="Gallery">
+            <Helmet>
+                <title>Trey Allen - Gallery</title>
+            </Helmet>
             <Header />
             <div className="Gallery__content">
                 {data.listings.nodes.map((listing, i) => (
