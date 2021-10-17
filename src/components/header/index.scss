@@ -1,0 +1,53 @@
+@use 'sass:math';
+@import "@styles/variables";
+
+.Header {
+    background-color: $palette0;
+    box-shadow: 0 1px 2px $palette4;
+    padding: $spacing $spacing * 2;
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint(small) {
+        flex-direction: column;
+        padding: 0;
+        text-align: center;
+    }
+
+    h1 {
+        padding: math.div($spacing, 2) 0;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        @include breakpoint(small) {
+            justify-content: center;
+        }
+    }
+
+    li {
+        @include breakpoint(small) {
+            padding: math.div($spacing, 2) $spacing * 2;
+            // &:first-child {
+            //     padding-right: $spacing
+            // }
+        }
+    }
+
+    li ~ li {
+        margin-left: $spacing * 2;
+
+        @include breakpoint(small) {
+            margin-left: 0;
+        }
+    }
+}

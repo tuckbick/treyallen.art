@@ -1,0 +1,14 @@
+@import "@styles/variables";
+
+.Listing {
+    text-align: center;
+
+    &__image {
+        // border: 5px solid #eee;
+        // background-color: #eee;
+
+        @include breakpoint(medium) {
+            margin-bottom: $spacing * 2;
+        }
+    }
+}

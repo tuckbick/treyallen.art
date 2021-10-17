@@ -1,4 +1,4 @@
-@import '@styles/variables.scss';
+@import "@styles/variables";
 
 html,
 body {
@@ -6,6 +6,7 @@ body {
     color: $palette5;
     margin: 0;
     padding: 0;
+    background-color: #8cafbf;
 }
 
 h1,
@@ -32,4 +33,3 @@ a {
         text-decoration: underline;
     }
 }
-

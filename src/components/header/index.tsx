@@ -1,5 +1,7 @@
-import { Link } from 'gatsby';
-import * as React from 'react';
+import { Link } from "gatsby";
+import * as React from "react";
+
+import "./index.scss";
 
 const Header = () => (
     <header className="Header">
@@ -9,7 +11,13 @@ const Header = () => (
         <nav>
             <ul>
                 <li>
-                    <a href="https://www.instagram.com/treyxallenart/" target="_blank" rel="noreferrer" >@treyxallenart</a>
+                    <a
+                        href="https://www.instagram.com/txallenart/"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        @txallenart
+                    </a>
                 </li>
                 <li>
                     <a href="mailto:email@treyallen.art">email@treyallen.art</a>
@@ -17,6 +25,6 @@ const Header = () => (
             </ul>
         </nav>
     </header>
-)
+);
 
 export default Header;
