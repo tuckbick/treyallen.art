@@ -12,11 +12,11 @@ const Header = () => (
             <ul>
                 <li>
                     <a
-                        href="https://www.instagram.com/txallenart/"
+                        href="https://www.instagram.com/treyallen.art/"
                         target="_blank"
                         rel="noreferrer"
                     >
-                        @txallenart
+                        @treyallen.art
                     </a>
                 </li>
                 <li>
