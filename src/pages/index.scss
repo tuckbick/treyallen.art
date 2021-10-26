@@ -1,35 +1,27 @@
 @import "@styles/variables";
 
-.Splash {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  width: 100vw;
+.Gallery {
+    &__content {
+        padding: $spacing * 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-  .Card {
-    position: relative;
-    top: -10vh;
-    transform: rotate(0.25deg) scale(1);
-
-    &:hover {
-      transform: rotate(-0.75deg) scale(1.02);
-      box-shadow: 2px 2px 5px $palette4;
+        @include breakpoint(small) {
+            padding: $spacing;
+        }
     }
-  }
 
-  h1 {
-    font-size: 5rem;
-  }
+    .Listing {
+        margin: $spacing * 4 0 $spacing * 8;
+        width: 100%;
 
-  a:hover {
-    text-decoration: none;
-  }
+        @include breakpoint(medium) {
+            margin: $spacing * 2 0 $spacing * 4;
+        }
+    }
 
-  .location {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    margin-top: $spacing;
-  }
+    .Card {
+        padding: $spacing;
+    }
 }
