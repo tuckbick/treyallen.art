@@ -20,7 +20,7 @@ const Header = () => (
                     </a>
                 </li>
                 <li>
-                    <a href="mailto:email@treyallen.art">email@treyallen.art</a>
+                    <a href="mailto:tmerkord98@gmail.com">tmerkord98@gmail.com</a>
                 </li>
             </ul>
         </nav>
