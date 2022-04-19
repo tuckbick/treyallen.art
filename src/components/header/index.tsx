@@ -25,11 +25,6 @@ const Header = () => (
                         @treyallen.art
                     </a>
                 </li>
-                <li>
-                    <a href="mailto:tmerkord98@gmail.com">
-                        tmerkord98@gmail.com
-                    </a>
-                </li>
             </ul>
         </nav>
     </header>
